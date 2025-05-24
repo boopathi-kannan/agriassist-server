@@ -22,8 +22,7 @@ dotenv.config();
 await connectDB()
 await connectCloudinary()
 
-const allowedOrigins=['agriassist-five.vercel.app
-']
+const allowedOrigins=['*']
 
 app.post('/stripe',express.raw({type:'application/json'}),stripeWebhooks)
 
